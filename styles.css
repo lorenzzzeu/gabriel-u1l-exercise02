@@ -1,8 +1,12 @@
+/* General styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -10,10 +14,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style-type: none;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li {
@@ -21,23 +30,60 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styles */
 .container {
     max-width: 900px;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+.featured-photo {
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Text color for better visibility on the photo */
+}
+
+.featured-photo img{
+    max-width: 10%;
+    border-radius: 5px;
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #333;
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
 }
 
+footer a{
+    color: #333
+}
+
+/* Logo styles */
 .logo {
     font-size: 24px;
 }
 
+/* Anchor styles */
 a {
     color: #fff;
     text-decoration: none;
@@ -47,32 +93,174 @@ a:hover {
     text-decoration: underline;
 }
 
+/* About Me styles */
+#about p {
+    text-align: justify;
+}
+
+/* Projects container styles */
 .projects-container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project {
-    width: calc(33.33% - 20px); 
+    width: calc(50% - 10px);
     margin-bottom: 20px;
 }
 
 .project img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 .project h3 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    color: #333;
 }
 
 .project p {
-    font-size: 14px;
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
 }
 
-#sections-wrapper {
-    margin: 0; /* Adjusted margin to make side margins smaller */
+.project-languages {
+    margin-bottom: 10px;
+}
+
+.project-languages p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Skills styles */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-category {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.skill-category h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact and Social Links styles */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Education and Organizations styles */
+#organization {
+    margin-top: 10px; /* Adjust spacing from previous section */
+}
+
+#organization .container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#organization .section {
+    width: calc(50% - 20px); /* Adjust width of each section */
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#organization h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#organization .section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#organization ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#organization ul li {
+    margin-bottom: 5px; 
+    font-size: 16px;
+    color: #666;
+    text-align: left; /* Align list items to the left */
+}
+
+#organization ul li strong {
+    color: #333;
+}
+
+/* CSS styles for the horizontal rule */
+section hr {
+    width: 60%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the horizontal rule */
+    border: none;
+    border-top: 2px solid #333; /* Color and style of the horizontal rule */
 }
 
