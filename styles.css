@@ -1,266 +1,265 @@
 /* General styles */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    margin: 0; /* Removes default margin */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family for the entire document */
+    background-color: #f5f5f5; /* Background color for the body */
+    color: #333; /* Default text color */
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    padding: 20px; /* Padding around the header content */
+    display: flex; /* Allows header content to be flex items */
+    justify-content: space-between; /* Aligns items with equal space between them */
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 20px; /* Adds space between header and other content */
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 28px; /* Font size for the logo */
+    font-weight: bold; /* Bold font weight for the logo */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 2px; /* Adds letter spacing */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adds shadow effect to text */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Displays navigation items inline */
+    margin-right: 20px; /* Adds space between navigation items */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+    color: #fff; /* Text color for navigation links */
+    text-decoration: none; /* Removes underline from navigation links */
+    font-size: 18px; /* Font size for navigation links */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline effect on hover for navigation links */
 }
 
 /* Main container styles */
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    max-width: 900px; /* Maximum width of the container */
+    margin: auto; /* Centers the container horizontally */
+    padding: 30px; /* Padding inside the container */
+    background-color: #fff; /* Background color for the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+    border-radius: 10px; /* Adds rounded corners to the container */
 }
 
 .featured-photo {
-    height: 300px; /* Adjust the height as needed */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 300px; /* Height of the featured photo section */
+    display: flex; /* Allows items to be flex items */
+    flex-direction: column; /* Arranges items in a column */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text */
     color: #333; /* Text color for better visibility on the photo */
 }
 
 .featured-photo img{
-    max-width: 10%;
-    border-radius: 5px;
+    max-width: 10%; /* Maximum width for the featured photo */
+    border-radius: 5px; /* Adds rounded corners to the photo */
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    margin-top: 10px;
+    background-color: #333; /* Background color for the footer */
+    color: #333; /* Text color for the footer */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Padding inside the footer */
+    margin-top: 10px; /* Adds space between footer and other content */
 }
 
 footer a{
-    color: #333
+    color: #333 /* Text color for footer links */
 }
 
 /* Logo styles */
 .logo {
-    font-size: 24px;
+    font-size: 24px; /* Font size for the logo */
 }
 
 /* Anchor styles */
 a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Default text color for links */
+    text-decoration: none; /* Removes underline from links */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline effect on hover for links */
 }
 
 /* About Me styles */
 #about p {
-    text-align: justify;
+    text-align: justify; /* Justifies text in the About Me section */
 }
 
 /* Projects container styles */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Allows projects to be flex items */
+    flex-wrap: wrap; /* Wraps projects to the next line when there's no space */
+    gap: 20px; /* Adds space between projects */
 }
 
 .project {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+    width: calc(50% - 10px); /* Sets the width of each project */
+    margin-bottom: 20px; /* Adds space between projects */
 }
 
 .project img {
-    max-width: 100%;
-    border-radius: 5px;
+    max-width: 100%; /* Maximum width for project images */
+    border-radius: 5px; /* Adds rounded corners to project images */
 }
 
 .project h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #333;
+    margin-top: 10px; /* Adds space above project headings */
+    font-size: 20px; /* Font size for project headings */
+    color: #333; /* Text color for project headings */
 }
 
 .project p {
-    font-size: 16px;
-    color: #666;
-    text-align: justify;
+    font-size: 16px; /* Font size for project descriptions */
+    color: #666; /* Text color for project descriptions */
+    text-align: justify; /* Justifies text in project descriptions */
 }
 
 .project-languages {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds space below project languages */
 }
 
 .project-languages p {
-    font-size: 16px;
-    color: #888;
+    font-size: 16px; /* Font size for project languages */
+    color: #888; /* Text color for project languages */
 }
 
 /* Skills styles */
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    display: grid; /* Allows skills to be grid items */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates responsive grid layout */
+    gap: 20px; /* Adds space between skills */
+    justify-content: center; /* Centers skills horizontally */
 }
 
 .skill-category {
-    margin-bottom: 5px;
-    text-align: justify;
+    margin-bottom: 5px; /* Adds space below each skill category */
+    text-align: justify; /* Justifies text in skill categories */
 }
 
 .skill-category h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
-    text-align: center;
+    font-size: 20px; /* Font size for skill category headings */
+    margin-bottom: 15px; /* Adds space below skill category headings */
+    color: #333; /* Text color for skill category headings */
+    text-align: center; /* Centers skill category headings */
 }
 
 .skill-category ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Removes bullet points from skill lists */
+    padding: 0; /* Removes default padding from skill lists */
+    margin: 0; /* Removes default margin from skill lists */
 }
 
 .skill-category ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #666;
+    margin-bottom: 10px; /* Adds space below each skill */
+    font-size: 16px; /* Font size for skills */
+    color: #666; /* Text color for skills */
 }
 
 /* Contact and Social Links styles */
 .contact-info {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds space below contact information */
 }
 
 .contact-info p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
+    margin-bottom: 10px; /* Adds space below each contact information */
+    font-size: 16px; /* Font size for contact information */
+    color: #333; /* Text color for contact information */
 }
 
 .social-links {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds space above social links */
 }
 
 .social-links h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
-    text-align: center;
+    font-size: 20px; /* Font size for social link headings */
+    margin-bottom: 15px; /* Adds space below social link headings */
+    color: #333; /* Text color for social link headings */
+    text-align: center; /* Centers social link headings */
 }
 
 .social-links ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Removes bullet points from social link lists */
+    padding: 0; /* Removes default padding from social link lists */
+    margin: 0; /* Removes default margin from social link lists */
 }
 
 .social-links ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds space below each social link */
 }
 
 .social-links ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
+    color: #333; /* Text color for social links */
+    text-decoration: none; /* Removes underline from social links */
+    font-size: 16px; /* Font size for social links */
 }
 
 .social-links ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline effect on hover for social links */
 }
 
 /* Education and Organizations styles */
 #organization {
-    margin-top: 10px; /* Adjust spacing from previous section */
+    margin-top: 10px; /* Adds space above the Education and Organizations section */
 }
 
 #organization .container {
-    display: flex;
-    flex-wrap: nowrap;
+    display: flex; /* Allows sections to be flex items */
+    flex-wrap: nowrap; /* Prevents sections from wrapping to the next line */
 }
 
 #organization .section {
-    width: calc(50% - 20px); /* Adjust width of each section */
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
+    width: calc(50% - 20px); /* Sets the width of each section */
+    padding: 20px; /* Padding inside each section */
+    background-color: #fff; /* Background color for each section */
+    margin-bottom: 20px; /* Adds space below each section */
 }
 
 #organization h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 24px; /* Font size for section headings */
+    margin-bottom: 20px; /* Adds space below section headings */
+    color: #333; /* Text color for section headings */
 }
 
 #organization .section h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 20px; /* Font size for subsection headings */
+    margin-bottom: 15px; /* Adds space below subsection headings */
+    color: #333; /* Text color for subsection headings */
 }
 
 #organization ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Removes bullet points from lists */
+    padding: 0; /* Removes default padding from lists */
+    margin: 0; /* Removes default margin from lists */
 }
 
 #organization ul li {
-    margin-bottom: 5px; 
-    font-size: 16px;
-    color: #666;
-    text-align: left; /* Align list items to the left */
+    margin-bottom: 5px; /* Adds space below each list item */
+    font-size: 16px; /* Font size for list items */
+    color: #666; /* Text color for list items */
+    text-align: left; /* Aligns list items to the left */
 }
 
 #organization ul li strong {
-    color: #333;
+    color: #333; /* Text color for strong emphasis */
 }
 
 /* CSS styles for the horizontal rule */
 section hr {
-    width: 60%; /* Adjust the width as needed */
-    margin: 20px auto; /* Center the horizontal rule */
-    border: none;
-    border-top: 2px solid #333; /* Color and style of the horizontal rule */
+    width: 60%; /* Width of the horizontal rule */
+    margin: 20px auto; /* Centers the horizontal rule */
+    border: none; /* Removes default border */
+    border-top: 2px solid #333; /* Style and color of the horizontal rule */
 }
-
