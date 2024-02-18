@@ -22,7 +22,7 @@ nav ul li {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
 }
@@ -46,3 +46,33 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+.project {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.project p {
+    font-size: 14px;
+}
+
+#sections-wrapper {
+    margin: 0; /* Adjusted margin to make side margins smaller */
+}
+
